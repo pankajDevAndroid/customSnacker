@@ -1,7 +1,7 @@
 # Sneaker
 A lightweight Android library for customizable alerts
 
-![](https://github.com/Hamadakram/Sneaker/blob/master/app/Sneaker.png?raw=true)
+
 ## Download
 Grab via Gradle:
 ```java
@@ -19,16 +19,15 @@ Or Maven:
 ## Usage
 #### Custom:
 ```java
-Sneaker.with(this)
-       .setTitle("Title", R.color.white) // Title and title color
-       .setMessage("This is the message.", R.color.white) // Message and message color
-       .setDuration(4000) // Time duration to show
-       .autoHide(true) // Auto hide Sneaker view
-       .setHeight(ViewGroup.LayoutParams.WRAP_CONTENT) // Height of the Sneaker layout
-       .setIcon(R.drawable.ic_no_connection, R.color.white, false) // Icon, icon tint color and circular icon view
-       .setTypeface(Typeface.createFromAsset(this.getAssets(), "font/" + fontName)); // Custom font for title and message
-       .setOnSneakerClickListener(this) // Click listener for Sneaker
-       .sneak(R.color.colorAccent); // Sneak with background color
+ Sneaker.with(this)
+                        .setTitle("Title", R.color.colorWhite)
+                        .setMessage("This is the message.", R.color.colorWhite)
+                        .setDuration(4000)
+                        .autoHide(true)
+                        .setHeight(ViewGroup.LayoutParams.WRAP_CONTENT)
+                        .setOnSneakerClickListener(this)
+                        .setIcon(R.drawable.ic_no_connection, R.color.colorWhite, false)
+                        .setTypeface(Typeface.createFromAsset(this.getAssets(), "font/" + "Oregon LDO Extended Bold.ttf")).sneak(R.color.colorAccent);
 ```
 #### Error:
 ```java
