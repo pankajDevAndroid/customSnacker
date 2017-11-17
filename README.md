@@ -19,7 +19,7 @@ Or Maven:
 ## Usage
 #### Custom:
 ```java
- Sneaker.with(this)
+                 Sneaker.with(this)
                         .setTitle("Title", R.color.colorWhite)
                         .setMessage("This is the message.", R.color.colorWhite)
                         .setDuration(4000)
